@@ -37,8 +37,8 @@ except:
 # Func principal
 def main():
 	p = prog()
-	parser = OptionParser('Uso: ./whoisON.py -g [gateway]')
-	parser.add_option('-g', '--gateway', dest='gateway',
+	parser = OptionParser('Uso: ./whoisON.py -t [TARGET ROUTER]')
+	parser.add_option('-t', '--target', dest='gateway',
 						help='Gateway da rede local', metavar='gateway')
 	(options, args) = parser.parse_args()
 	if(options.gateway == None):
